@@ -1,0 +1,23 @@
+= Super Arm
+:toc:
+
+== Summary
+
+This repository is for housing bootstrap scripts for Windows workstations.
+
+Simply executing the ./bootstrap.bat file on a clean windows workstation should install all of the
+desired packages.
+
+This has only been used on Windows 10 workstations.
+
+== Useful commands
+
+* choco upgrade all -y
+** Upgrade all installed packages
+* choco list -l
+** List all installed packages
+
+== References
+
+* Windows Packager Manager (Chocolatey)
+** https://chocolatey.org
