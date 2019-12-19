@@ -12,12 +12,13 @@ choco install chromium -y
 choco install firefox -y
 
 :: Install cloud storage tools
-choco install googledrive -y
+choco install google-backup-and-sync
 
 :: Install hypervisors and containers
 choco install virtualbox -y
-choco install docker-desktop -y
 choco install docker-cli -y
+:: Won't install on windows 10 home
+choco install docker-desktop -y
 
 :: Install integrated development environments
 choco install vscode -y
@@ -47,7 +48,7 @@ choco install winpcap -y
 
 :: Install nifty gui tools
 choco install winscp -y
-choco install putty -y
+choco install putty.install -y
 
 :: Install radical cli tools
 choco install vim -y

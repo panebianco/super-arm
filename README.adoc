@@ -10,6 +10,23 @@ desired packages.
 
 This has only been used on Windows 10 workstations.
 
+== Setup
+
+Setup for fresh Windows workstation.
+
+* Download zip -> unzip
+* Right click bat files of interest and run as administrator
+
+Additional work which should be run.
+
+=== SSH
+
+Run the following commands as admin from command prompt.
+Add public SSH key to github and anywhere else.
+
+* `ssh-keygen -t rsa -b 4096`
+** Hit enter when prompted to use no password and default location
+
 == Useful commands
 
 * choco upgrade all -y
