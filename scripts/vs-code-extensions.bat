@@ -9,6 +9,7 @@ CALL code --install-extension octref.vetur
 
 :: Install web extensions
 CALL code --install-extension msjsdiag.debugger-for-chrome
+CALL code --install-extension ritwickdey.liveserver
 CALL code --install-extension dbaeumer.vscode-eslint
 CALL code --install-extension formulahendry.auto-close-tag
 CALL code --install-extension formulahendry.auto-rename-tag
