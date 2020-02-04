@@ -73,6 +73,7 @@ choco install discord -y
 
 :: Install photo manipulation tools
 choco install gimp -y
+choco install inkscape -y
 
 :: Install SD card tools
 choco install win32diskimager -y
