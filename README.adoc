@@ -4,7 +4,7 @@
 == Summary
 
 This repository is for housing bootstrap scripts for Windows workstations 
-(and now linuxs virtual machines via WSL 2).
+(and now linux virtual machines via WSL 2).
 
 Simply executing the ./bootstrap.bat file on a clean windows workstation should install all of the
 desired packages.
@@ -13,18 +13,12 @@ This has only been used on Windows 10 workstations.
 
 == Setup
 
+=== Windows
+
 Setup for fresh Windows workstation.
 
 * Download zip -> unzip (via github console)
 * Right click bat files of interest and run as administrator
-
-=== SSH
-
-Run the following commands as admin from command prompt.
-Add public SSH key to github and anywhere else.
-
-* `ssh-keygen -t rsa -b 4096`
-** Hit enter when prompted to use no password and default location
 
 === WSL 2
 
