@@ -7,6 +7,9 @@ CALL code --install-extension eg2.vscode-npm-script
 CALL code --install-extension christian-kohler.npm-intellisense
 CALL code --install-extension octref.vetur
 
+:: Install wsl extensions
+CALL code --install-extension ms-vscode-remote.remote-wsl
+
 :: Install web extensions
 CALL code --install-extension msjsdiag.debugger-for-chrome
 CALL code --install-extension ritwickdey.liveserver
@@ -15,6 +18,7 @@ CALL code --install-extension formulahendry.auto-close-tag
 CALL code --install-extension formulahendry.auto-rename-tag
 CALL code --install-extension abusaidm.html-snippets
 CALL code --install-extension xabikos.javascriptsnippets
+CALL code --install-extension aws-amplify.aws-amplify-vscode
 
 :: Install python extensions
 CALL code --install-extension ms-python.python
