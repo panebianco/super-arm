@@ -14,17 +14,26 @@ ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -q -N ""
 echo "Public ssh key output below."
 cat ~/.ssh/id_rsa.pub
 
-echo "Updating package manages..."
+echo "Updating package managers..."
 sudo apt update
 
 echo "Installing additional packages..."
 sudo apt install git -y
 
-echo "Configure nodejs...what major version of nodejs (e.g. 14)?"
+echo "Configuring nodejs...what major version of nodejs (e.g. 14)?"
 read nodejs
 curl -sL "https://deb.nodesource.com/setup_${nodejs}.x" | sudo -E bash -
 sudo apt install nodejs -y
 
+echo "Configuring misc packages"
 sudo apt install npm -y
 sudo apt install awscli -y
 sudo apt install jq -y
+sudo apt install unzip -y
+
+echo "Configuring terraform"
+TF_LATEST_VERSION=`curl -sk https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version'`
+wget https://releases.hashicorp.com/terraform/${TF_LATEST_VERSION}/terraform_${TF_LATEST_VERSION}_linux_amd64.zip
+unzip terraform_${TF_LATEST_VERSION}_linux_amd64.zip
+sudo mv terraform /usr/local/bin/
+rm terraform_${TF_LATEST_VERSION}_linux_amd64.zip
