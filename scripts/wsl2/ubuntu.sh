@@ -34,6 +34,6 @@ sudo apt install unzip -y
 echo "Configuring terraform"
 TF_LATEST_VERSION=`curl -sk https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version'`
 wget https://releases.hashicorp.com/terraform/${TF_LATEST_VERSION}/terraform_${TF_LATEST_VERSION}_linux_amd64.zip
-unzip terraform_${TF_LATEST_VERSION}_linux_amd64.zip
-sudo mv terraform /usr/local/bin/
-rm terraform_${TF_LATEST_VERSION}_linux_amd64.zip
+unzip -f terraform_${TF_LATEST_VERSION}_linux_amd64.zip
+sudo mv -f terraform /usr/local/bin/
+rm -f terraform_${TF_LATEST_VERSION}_linux_amd64.zip
