@@ -25,15 +25,20 @@ read nodejs
 curl -sL "https://deb.nodesource.com/setup_${nodejs}.x" | sudo -E bash -
 sudo apt install nodejs -y
 
-echo "Configuring misc packages"
+echo "Configuring misc packages..."
 sudo apt install npm -y
 sudo apt install awscli -y
 sudo apt install jq -y
 sudo apt install unzip -y
 
-echo "Configuring terraform"
+echo "Configuring terraform..."
 TF_LATEST_VERSION=`curl -sk https://checkpoint-api.hashicorp.com/v1/check/terraform | jq -r -M '.current_version'`
 wget https://releases.hashicorp.com/terraform/${TF_LATEST_VERSION}/terraform_${TF_LATEST_VERSION}_linux_amd64.zip
 unzip -f terraform_${TF_LATEST_VERSION}_linux_amd64.zip
 sudo mv -f terraform /usr/local/bin/
 rm -f terraform_${TF_LATEST_VERSION}_linux_amd64.zip
+
+echo "Configuring global npm packages..."
+sudo npm install -g @vue/cli
+sudo npm install -g @aws-amplify/cli
+sudo npm install -g serverless
