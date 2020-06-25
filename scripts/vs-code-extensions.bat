@@ -25,6 +25,7 @@ CALL code --install-extension ms-python.python
 
 :: Install api extensions
 CALL code --install-extension arjun.swagger-viewer
+CALL code --install-extension 42crunch.vscode-openapi
 
 :: Install serialization extensions
 CALL code --install-extension redhat.vscode-xml
