@@ -45,7 +45,7 @@ CALL code --install-extension jpogran.puppet-vscode
 :: Install miscellaneous extensions
 CALL code --install-extension esbenp.prettier-vscode
 CALL code --install-extension coenraads.bracket-pair-colorizer
-CALL code --install-extension joaompinto.asciidoctor-vscode
+CALL code --install-extension asciidoctor.asciidoctor-vscode
 CALL code --install-extension alefragnani.bookmarks
 CALL code --install-extension hangxingliu.vscode-systemd-support
 CALL code --install-extension streetsidesoftware.code-spell-checker
