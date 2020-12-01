@@ -40,7 +40,7 @@ CALL code --install-extension aws-scripting-guy.cform
 
 :: Install configuration management extensions
 CALL code --install-extension vscoss.vscode-ansible
-CALL code --install-extension jpogran.puppet-vscode
+CALL code --install-extension puppet.puppet-vscode
 
 :: Install miscellaneous extensions
 CALL code --install-extension esbenp.prettier-vscode
