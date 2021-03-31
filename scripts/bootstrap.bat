@@ -10,9 +10,10 @@
 choco install googlechrome -y
 choco install chromium -y
 choco install firefox -y
+choco install brave -y
 
 :: Install cloud storage tools
-choco install google-backup-and-sync
+choco install google-backup-and-sync -y
 
 :: Install hypervisors and containers
 choco install virtualbox -y
@@ -41,6 +42,9 @@ choco install terraform -y
 choco install packer -y
 choco install vault -y
 
+:: Install automation tools
+choco install autohotkey -y
+
 :: Install packet sniffing tools
 choco install wireshark -y
 :: wireshark dependency
@@ -61,6 +65,7 @@ choco install grep -y
 
 :: Install multimedia / miscellaneous tools
 choco install adobereader -y
+choco install spotify -y
 choco install vlc -y
 choco install 7zip -y
 
