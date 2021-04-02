@@ -62,6 +62,7 @@ choco install curl -y
 choco install wget -y
 choco install jq -y
 choco install grep -y
+choco install md5 -y
 
 :: Install multimedia / miscellaneous tools
 choco install adobereader -y
