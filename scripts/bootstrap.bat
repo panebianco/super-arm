@@ -76,6 +76,7 @@ choco install steam -y
 :: Install collaboration tools
 choco install slack -y
 choco install discord -y
+choco install microsoft-teams -y
 
 :: Install photo manipulation tools
 choco install gimp -y
