@@ -13,7 +13,7 @@ choco install firefox -y
 choco install brave -y
 
 :: Install cloud storage tools
-choco install google-backup-and-sync -y
+choco install google-drive-file-stream -y
 
 :: Install hypervisors and containers
 choco install virtualbox -y
