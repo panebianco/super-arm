@@ -36,7 +36,6 @@ CALL code --install-extension aws-scripting-guy.cform
 :: Install miscellaneous extensions
 CALL code --install-extension visualstudioexptteam.vscodeintellicode
 CALL code --install-extension esbenp.prettier-vscode
-CALL code --install-extension coenraads.bracket-pair-colorizer-2
 CALL code --install-extension christian-kohler.path-intellisense
 CALL code --install-extension asciidoctor.asciidoctor-vscode
 CALL code --install-extension alefragnani.bookmarks
