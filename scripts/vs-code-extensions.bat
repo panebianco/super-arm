@@ -30,7 +30,7 @@ CALL code --install-extension redhat.vscode-xml
 CALL code --install-extension redhat.vscode-yaml
 
 :: Install infrastructure orchestration extensions
-CALL code --install-extension mauve.terraform
+CALL code --install-extension hashicorp.terraform
 CALL code --install-extension aws-scripting-guy.cform
 
 :: Install miscellaneous extensions
