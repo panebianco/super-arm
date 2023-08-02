@@ -3,7 +3,6 @@
 :: This script requires visual studio code to be installed
 
 :: Install node.js extensions
-CALL code --install-extension eg2.vscode-npm-script
 CALL code --install-extension christian-kohler.npm-intellisense
 CALL code --install-extension octref.vetur
 
