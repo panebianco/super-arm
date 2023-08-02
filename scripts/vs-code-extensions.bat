@@ -33,6 +33,9 @@ CALL code --install-extension redhat.vscode-yaml
 CALL code --install-extension hashicorp.terraform
 CALL code --install-extension aws-scripting-guy.cform
 
+:: AWS extensions
+CALL code --install-extension amazonwebservices.aws-toolkit-vscode
+
 :: Install miscellaneous extensions
 CALL code --install-extension visualstudioexptteam.vscodeintellicode
 CALL code --install-extension esbenp.prettier-vscode
