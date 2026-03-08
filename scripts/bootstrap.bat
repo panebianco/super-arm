@@ -23,24 +23,18 @@ choco install docker-desktop -y
 
 :: Install integrated development environments
 choco install vscode -y
-choco install intellijidea-community -y
-choco install intellijidea-ultimate -y
+choco install antigravity -y
 
 :: Install programming languages
-choco install jdk8 -y
-choco install groovy -y
 choco install nodejs -y
 choco install python -y
 
 :: Install version control and configuration management tools
 choco install git -y
-choco install gradle -y
-choco install maven -y
 
 :: Install infrastructure automation tools
 choco install terraform -y
 choco install packer -y
-choco install vault -y
 
 :: Install automation tools
 choco install autohotkey -y
@@ -76,7 +70,6 @@ choco install steam -y
 :: Install collaboration tools
 choco install slack -y
 choco install discord -y
-choco install microsoft-teams -y
 
 :: Install photo manipulation tools
 choco install gimp -y
